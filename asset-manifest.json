@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shikky/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/shikky/static/js/main.52ada933.chunk.js",
+    "main.js.map": "/shikky/static/js/main.52ada933.chunk.js.map",
+    "runtime-main.js": "/shikky/static/js/runtime-main.9ddbe04d.js",
+    "runtime-main.js.map": "/shikky/static/js/runtime-main.9ddbe04d.js.map",
+    "static/js/2.a7e7237e.chunk.js": "/shikky/static/js/2.a7e7237e.chunk.js",
+    "static/js/2.a7e7237e.chunk.js.map": "/shikky/static/js/2.a7e7237e.chunk.js.map",
+    "static/js/3.0fd704ff.chunk.js": "/shikky/static/js/3.0fd704ff.chunk.js",
+    "static/js/3.0fd704ff.chunk.js.map": "/shikky/static/js/3.0fd704ff.chunk.js.map",
+    "index.html": "/shikky/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/shikky/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.a7e7237e.chunk.js.LICENSE.txt": "/shikky/static/js/2.a7e7237e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/shikky/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ddbe04d.js",
+    "static/js/2.a7e7237e.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.52ada933.chunk.js"
+  ]
+}
