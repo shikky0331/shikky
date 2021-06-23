@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "lint": "eslint src/**/*.{ts,tsx} --fix"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": "eslint --fix"
