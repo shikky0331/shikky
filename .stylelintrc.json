@@ -2,5 +2,18 @@
   "extends": [
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines"
-  ]
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      "width",
+      "height"
+    ]
+  }
 }
