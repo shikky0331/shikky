@@ -1,8 +1,19 @@
-import styles from './App.module.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Home from 'pages/home/index';
 
 function App() {
   return (
-    <div className={styles.error}>Hello World</div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
