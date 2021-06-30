@@ -1,12 +1,12 @@
 import ReactDOM from 'react-dom';
 import './index.scss';
 import { StrictMode } from 'react';
-import App from './containers/App';
+import Containers from 'containers/index';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <Containers />
   </StrictMode>,
   document.getElementById('root'),
 );

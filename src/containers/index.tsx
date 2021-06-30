@@ -4,17 +4,16 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from 'pages/home/index';
+import { VFC } from 'react';
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-  );
-}
+const Containers: VFC = () => (
+  <Router>
+    <Switch>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
+  </Router>
+);
 
-export default App;
+export default Containers;
