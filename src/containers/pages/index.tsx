@@ -1,3 +1,5 @@
-const Home = () => <>Hello World</>;
+import { VFC } from 'react';
 
-export default Home;
+const Pages: VFC = () => <>Hello World</>;
+
+export default Pages;

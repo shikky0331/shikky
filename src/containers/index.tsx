@@ -3,14 +3,14 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Home from 'containers/pages/index';
+import Pages from 'containers/pages/index';
 import { VFC } from 'react';
 
 const Containers: VFC = () => (
   <Router>
     <Switch>
       <Route path="/">
-        <Home />
+        <Pages />
       </Route>
     </Switch>
   </Router>
