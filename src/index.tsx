@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import './index.scss';
 import { StrictMode } from 'react';
-import Containers from 'containers/index';
+import Containers from 'containers';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
