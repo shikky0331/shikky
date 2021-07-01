@@ -3,7 +3,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Pages from 'containers/pages/index';
+import Pages from 'containers/pages';
 import { VFC } from 'react';
 
 const Containers: VFC = () => (
