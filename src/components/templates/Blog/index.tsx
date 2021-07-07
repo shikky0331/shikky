@@ -1,6 +1,6 @@
 import { VFC } from 'react';
-import styles from 'components/templates/Blog/style.module.scss';
 import { Link } from 'react-router-dom';
+import styles from './style.module.scss';
 
 const Blog: VFC = () => (
   <main className={styles.main}>
