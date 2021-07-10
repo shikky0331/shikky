@@ -1,19 +1,11 @@
+import Header from 'components/organisms/Header';
 import { VFC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './style.module.scss';
 
 const Blog: VFC = () => (
   <>
-    <header className={styles.header}>
-      <Link to="/" className={styles.logo}>Shikky</Link>
-      <nav>
-        <ul className={styles.headerMenu}>
-          <li className={styles.headerItem}><Link to="/">Blog</Link></li>
-          <li className={styles.headerItem}><a href="https://github.com/shikky0331" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li className={styles.headerItem}><a href="https://twitter.com/shikky0331" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        </ul>
-      </nav>
-    </header>
+    <Header />
     <main className={styles.main}>
       <article className={styles.post}>
         <h3 className={styles.h3}><Link to="https://shikky0331.github.io/shikky/">How Are Function Components Different from Classes?</Link></h3>
