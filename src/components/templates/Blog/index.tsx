@@ -1,5 +1,6 @@
 import { VFC } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from 'components/organisms/Footer';
 import styles from './style.module.scss';
 
 const Blog: VFC = () => (
@@ -31,9 +32,7 @@ const Blog: VFC = () => (
         <p className={styles.p}>This is my 1th blog post</p>
       </article>
     </main>
-    <footer className={styles.footer}>
-      <span className={styles.copyOnWrite}>© 2021 shikky</span>
-    </footer>
+    <Footer />
   </>
 );
 
