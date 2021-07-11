@@ -29,8 +29,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "commit": "cz",
-    "lint": "eslint src/**/*.{ts,tsx} --fix",
-    "lint:style": "stylelint src/**/*.scss --fix"
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "lint:style": "stylelint 'src/**/*.scss' --fix"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": "eslint --fix",
