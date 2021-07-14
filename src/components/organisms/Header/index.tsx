@@ -1,7 +1,8 @@
+import { VFC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './style.module.scss';
 
-const Header = () => (
+const Header: VFC = () => (
   <header className={styles.header}>
     <Link to="/" className={styles.logo}>Shikky</Link>
     <nav>
