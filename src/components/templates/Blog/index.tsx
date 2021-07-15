@@ -1,3 +1,4 @@
+import Header from 'components/organisms/Header';
 import { VFC } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from 'components/organisms/Footer';
@@ -5,6 +6,7 @@ import styles from './style.module.scss';
 
 const Blog: VFC = () => (
   <>
+    <Header />
     <main className={styles.main}>
       <article className={styles.post}>
         <h3 className={styles.h3}><Link to="https://shikky0331.github.io/shikky/">How Are Function Components Different from Classes?</Link></h3>
