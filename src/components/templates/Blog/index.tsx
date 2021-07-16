@@ -1,6 +1,7 @@
 import Header from 'components/organisms/Header';
 import { VFC } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from 'components/organisms/Footer';
 import styles from './style.module.scss';
 
 const Blog: VFC = () => (
@@ -33,6 +34,7 @@ const Blog: VFC = () => (
         <p className={styles.p}>This is my 1th blog post</p>
       </article>
     </main>
+    <Footer />
   </>
 );
 
