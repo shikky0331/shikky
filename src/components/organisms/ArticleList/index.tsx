@@ -1,5 +1,6 @@
 import Article, { ArticleProps } from 'components/molecules/Article';
 import { VFC } from 'react';
+import './style.module.scss';
 
 interface ArticleListProps {
   articles: ArticleProps[]
