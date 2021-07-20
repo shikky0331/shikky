@@ -1,6 +1,6 @@
 import Article, { ArticleProps } from 'components/molecules/Article';
 import { VFC } from 'react';
-import './style.module.scss';
+import styles from './style.module.scss';
 
 interface ArticleListProps {
   articles: ArticleProps[]
@@ -13,7 +13,7 @@ const ArticleList: VFC<ArticleListProps> = ({
     {articles.map(({
       url, title, date, introduction,
     }) => (
-      <li>
+      <li className={styles.li}>
         <Article
           url={url}
           title={title}
