@@ -14,7 +14,7 @@ const Article: VFC<ArticleProps> = ({
   introduction,
 }) => (
   <article className={styles.wrapper}>
-    <ArticleTitle url={url} title={title} />
+    <div className={styles.articleTitleWrapper}><ArticleTitle url={url} title={title} /></div>
     <small>{date}</small>
     <p className={styles.p}>{introduction}</p>
   </article>
