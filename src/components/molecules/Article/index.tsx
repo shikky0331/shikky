@@ -2,10 +2,10 @@ import { VFC } from 'react';
 import ArticleTitle, { ArticleTitleProps } from 'components/atoms/ArticleTitle';
 import styles from './style.module.scss';
 
-export interface ArticleProps extends ArticleTitleProps {
+export type ArticleProps = {
   date: string;
   introduction: string;
-}
+} & ArticleTitleProps
 
 const Article: VFC<ArticleProps> = ({
   url,

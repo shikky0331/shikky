@@ -5,7 +5,7 @@ import Footer from 'components/organisms/Footer';
 import { ArticleProps } from 'components/molecules/Article';
 import styles from './style.module.scss';
 
-export interface BlogProps {
+export type BlogProps = {
   articles: ArticleProps[];
 }
 

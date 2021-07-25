@@ -2,7 +2,7 @@ import { VFC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './style.module.scss';
 
-export interface ArticleTitleProps {
+export type ArticleTitleProps = {
   url: string;
   title: string;
 }

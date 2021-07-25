@@ -2,7 +2,7 @@ import Article, { ArticleProps } from 'components/molecules/Article';
 import { VFC } from 'react';
 import styles from './style.module.scss';
 
-interface ArticleListProps {
+export type ArticleListProps = {
   articles: ArticleProps[]
 }
 
