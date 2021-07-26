@@ -13,13 +13,12 @@ const ArticleList: VFC<ArticleListProps> = ({
     {articles.map(({
       url, title, date, introduction,
     }) => (
-      <li className={styles.li}>
+      <li className={styles.li} key={url}>
         <Article
           url={url}
           title={title}
           date={date}
           introduction={introduction}
-          key={url}
         />
       </li>
     ))}
