@@ -1,8 +1,21 @@
-import { VFC } from 'react';
-import Blog from 'components/templates/Blog';
+import { ComponentProps } from 'react';
 
-const Pages: VFC = () => {
-  const articles = [
+import { Story, Meta } from '@storybook/react';
+
+import ArticleList from './index';
+
+export default {
+  title: 'ArticleList',
+  component: ArticleList,
+} as Meta;
+
+const Template: Story<ComponentProps<typeof ArticleList>> = ({ articles }) => (
+  <ArticleList articles={articles} />
+);
+
+export const Default = Template.bind({});
+Default.args = {
+  articles: [
     {
       url: '/posts/5', title: 'How Are Function Components Defferent from Classes?', date: 'February 13, 2021', introduction: 'This is my 5th blog post',
     },
@@ -18,11 +31,5 @@ const Pages: VFC = () => {
     {
       url: '/posts/1', title: 'first blog post', date: 'July 21, 2021', introduction: 'This is my 1th blog post',
     },
-  ];
-
-  return (
-    <Blog articles={articles} />
-  );
+  ],
 };
-
-export default Pages;
