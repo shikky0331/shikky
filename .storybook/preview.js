@@ -1,5 +1,5 @@
 import { addDecorator } from "@storybook/react";
-import { MemoryRouter } from "react-router";
+import { MemoryRouter as Router } from 'react-router-dom';
 import "styles/global.scss"
 
 export const parameters = {
@@ -12,4 +12,4 @@ export const parameters = {
   },
 }
 
-addDecorator(story => <MemoryRouter initialEntries={['/']} > {story()} </MemoryRouter>)
+addDecorator(story => <Router initialEntries={['/']} > {story()} </Router>)
