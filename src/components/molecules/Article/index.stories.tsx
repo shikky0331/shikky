@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react';
 import Article from './index';
 
 export default {
-  title: 'Article',
+  title: 'molecules/Article',
   component: Article,
 } as Meta;
 
