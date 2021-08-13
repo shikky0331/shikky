@@ -11,13 +11,14 @@ const Blog = (): ReactElement => {
   const { date } = useParams<ParamTypes>();
 
   useEffect(() => {
-    const markdownPath = import(`./markdowns/${date}.md`);
-    markdownPath
-      .then((path) => {
-        fetch(path.default)
-          .then((response) => response.text())
-          .then((text) => setMarkdown(text));
-      });
+    const fetchMarkdownData = async () => {
+      const markdownFile = await import(`./markdowns/${date}.md`);
+      const response = await fetch(markdownFile.default);
+
+      setMarkdown(await response.text());
+    };
+
+    fetchMarkdownData().catch(() => setMarkdown('# Not found a article.'));
   }, []);
 
   return (
