@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Pages from 'containers/pages';
-import Blog from 'containers/pages/Blog/index';
+import Blog from 'containers/pages/blog';
 import { VFC } from 'react';
 
 const Containers: VFC = () => (
