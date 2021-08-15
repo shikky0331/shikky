@@ -13,7 +13,7 @@ const Blog: VFC = () => {
   useEffect(() => {
     const fetchMarkdownData = async () => {
       try {
-        const markdownFile = await import(`./markdowns/${date}.md`);
+        const markdownFile = await import(`../markdowns/${date}.md`);
         const response = await fetch(markdownFile.default);
 
         setMarkdown(await response.text());
