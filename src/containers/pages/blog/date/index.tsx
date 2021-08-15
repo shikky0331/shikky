@@ -1,12 +1,12 @@
 import ReactMarkdown from 'react-markdown';
-import { ReactElement, useEffect, useState } from 'react';
+import { useEffect, useState, VFC } from 'react';
 import { useParams } from 'react-router-dom';
 
 type ParamTypes = {
   date: string
 }
 
-const Blog = (): ReactElement => {
+const Blog: VFC = () => {
   const [markdown, setMarkdown] = useState('');
   const { date } = useParams<ParamTypes>();
 
