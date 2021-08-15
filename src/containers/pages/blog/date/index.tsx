@@ -12,13 +12,17 @@ const Blog: VFC = () => {
 
   useEffect(() => {
     const fetchMarkdownData = async () => {
-      const markdownFile = await import(`./markdowns/${date}.md`);
-      const response = await fetch(markdownFile.default);
+      try {
+        const markdownFile = await import(`./markdowns/${date}.md`);
+        const response = await fetch(markdownFile.default);
 
-      setMarkdown(await response.text());
+        setMarkdown(await response.text());
+      } catch (error) {
+        setMarkdown('# Not found a article.');
+      }
     };
 
-    fetchMarkdownData().catch(() => setMarkdown('# Not found a article.'));
+    fetchMarkdownData();
   }, []);
 
   return (
