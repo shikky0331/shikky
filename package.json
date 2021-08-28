@@ -39,7 +39,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": "eslint --fix",
+    "src/**/*.{ts,tsx}": "eslint --fix --max-warnings=0",
     "src/**/*.scss": "stylelint --fix"
   },
   "eslintConfig": {
