@@ -1,5 +1,7 @@
 import ReactMarkdown from 'react-markdown';
-import { useEffect, useState, VFC } from 'react';
+import {
+  useEffect, useState, VFC, useMemo,
+} from 'react';
 import { useParams } from 'react-router-dom';
 import articles from 'containers/pages/articles.json';
 import Seo from 'components/templates/Seo';
@@ -11,7 +13,7 @@ type ParamTypes = {
 const Blog: VFC = () => {
   const [markdown, setMarkdown] = useState('');
   const { date } = useParams<ParamTypes>();
-  const articleInfo = articles.find((article) => article.url.includes(date));
+  const articleInfo = useMemo(() => articles.find((article) => article.url.includes(date)), [date]);
 
   useEffect(() => {
     const fetchMarkdownData = async () => {
