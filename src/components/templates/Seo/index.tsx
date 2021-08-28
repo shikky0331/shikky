@@ -1,4 +1,4 @@
-import { FC, VFC } from 'react';
+import { VFC } from 'react';
 import { Helmet } from 'react-helmet';
 
 type SeoArgs = {
@@ -11,7 +11,7 @@ type SeoArgs = {
   ogImage?: string
 }
 
-const Seo: FC<SeoArgs> = ({
+const Seo: VFC<SeoArgs> = ({
   title,
   description,
   url,
