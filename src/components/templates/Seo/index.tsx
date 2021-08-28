@@ -1,7 +1,7 @@
 import { VFC } from 'react';
 import { Helmet } from 'react-helmet';
 
-type SeoArgs = {
+type SeoProps = {
   title?: string
   description?: string
   url?: string
@@ -11,7 +11,7 @@ type SeoArgs = {
   ogImage?: string
 }
 
-const Seo: VFC<SeoArgs> = ({
+const Seo: VFC<SeoProps> = ({
   title,
   description,
   url,
