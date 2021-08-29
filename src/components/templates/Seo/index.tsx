@@ -5,7 +5,7 @@ type SeoProps = {
   title?: string
   description?: string
   url?: string
-  ogType?: string
+  ogType: string
   ogTitle?: string
   ogDescription?: string
   ogImage?: string

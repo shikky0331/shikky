@@ -5,7 +5,7 @@ import articles from './articles.json';
 
 const Pages: VFC = () => (
   <>
-    <Seo />
+    <Seo ogType="website" />
     <Blog articles={articles} />
   </>
 );
