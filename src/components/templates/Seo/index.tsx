@@ -28,7 +28,7 @@ const Seo: VFC<SeoProps> = ({
     <link rel="canonical" href="https://shikky0331.github.io/shikky" />
     <meta charSet="utf-8" />
     <meta name="description" content={description} />
-    <meta property="og:url" content={url} />
+    <meta property="og:url" content={`https://shikky0331.github.io/shikky${url}`} />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />

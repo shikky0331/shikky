@@ -35,7 +35,7 @@ const Blog: VFC = () => {
       <Seo
         title={articleInfo?.title}
         description={articleInfo?.introduction}
-        url={`https://shikky0331.github.io/shikky${articleInfo?.url}`}
+        url={articleInfo?.url}
         ogType="article"
         ogTitle={articleInfo?.title}
         ogDescription={articleInfo?.introduction}
