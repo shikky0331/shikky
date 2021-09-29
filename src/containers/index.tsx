@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Pages from 'containers/pages';
 import Blog from 'containers/pages/blog/date';
+import NoMatch from 'containers/pages/noMatch';
 import { VFC } from 'react';
 
 const Containers: VFC = () => (
@@ -13,8 +14,11 @@ const Containers: VFC = () => (
       <Route path="/blog/:date">
         <Blog />
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         <Pages />
+      </Route>
+      <Route path="*">
+        <NoMatch />
       </Route>
     </Switch>
   </Router>
