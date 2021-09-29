@@ -1,2 +1,0 @@
-(this.webpackJsonpshikky=this.webpackJsonpshikky||[]).push([[4],{211:function(s,i,t){"use strict";t.r(i),i.default=t.p+"static/media/20210805.f1e47d49.md"}}]);
-//# sourceMappingURL=4.9cfd08fb.chunk.js.map
