@@ -2,7 +2,7 @@
   "name": "shikky",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shikky0331.github.io/shikky",
+  "homepage": "https://shikky0331.com",
   "dependencies": {
     "@storybook/react": "^6.3.4",
     "@testing-library/jest-dom": "^5.14.1",

@@ -25,10 +25,10 @@ const Seo: VFC<SeoProps> = ({
     titleTemplate="%s | Shikky"
   >
     <title>{title}</title>
-    <link rel="canonical" href="https://shikky0331.github.io/shikky" />
+    <link rel="canonical" href="https://shikky0331.com" />
     <meta charSet="utf-8" />
     <meta name="description" content={description} />
-    <meta property="og:url" content={`https://shikky0331.github.io/shikky${url}`} />
+    <meta property="og:url" content={`https://shikky0331.com${url}`} />
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />
